@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine ❤️</title>
+  <style>
+    :root {
+      --pink-main: #ff6fa5;
+      --pink-soft: #ffe0ec;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(rgba(255, 224, 236, 0.85), rgba(255, 224, 236, 0.85)), var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      color: #6b0036;
+    }
+
+    .page {
+      display: none;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .page.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .intro-card {
+      background: white;
+      padding: 40px 32px;
+      border-radius: 24px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(255, 111, 165, 0.35);
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .intro-card h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      color: var(--pink-main);
+    }
+
+    .intro-card p {
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      background: var(--pink-main);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 20px rgba(255, 111, 165, 0.4);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(255, 111, 165, 0.5);
+    }
+
+    .dashboard {
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .dashboard h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--pink-main);
+      margin-bottom: 16px;
+    }
+
+    .love-message {
+      background: white;
+      padding: 24px 28px;
+      border-radius: 24px;
+      margin: 0 auto 32px;
+      max-width: 700px;
+      box-shadow: 0 12px 30px rgba(255, 111, 165, 0.25);
+    }
+
+    .love-message h3 {
+      color: var(--pink-main);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .love-message p {
+      line-height: 1.7;
+      font-size: 1.05rem;
+      white-space: pre-line;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+
+    .photo {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(255, 111, 165, 0.25);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="intro" class="page active">
+    <div class="intro-card">
+      <h1>Happy Valentine </h1>
+      <button class="btn" onclick="goToDashboard()">💌</button>
+    </div>
+  </section>
+
+  <section id="dashboard" class="page">
+    <div class="dashboard">
+
+      <div class="love-message">
+        <h3>My Message for You </h3>
+        <p>
+       I just want to take this moment to say how grateful I am for you. Thank you for being patient with me, for supporting me, and for always trying your best for us. Having you in my life makes everything feel a little lighter and a little happier.
+
+I appreciate the small things you do every day, even the ones you don't realize matter so much to me. You make me feel cared for, valued, and loved in ways that mean more than words.
+
+I may not always say it, but please know that you are important to me. I'm thankful for you today, and I'm thankful for you every day after this.
+          <br><br>
+          Happy Valentine’s Day 
+        </p>
+      </div>
+      <div class="gallery">
+        <div class="photo"><img src="1db34173-d670-4116-ae36-3517077f0a87.jpg" alt="Memory 1"></div>
+        <div class="photo"><img src="64a3343b-bfae-4ca8-be93-23668f655b3f.jpg" alt="Memory 2"></div>
+        <div class="photo"><img src="4957e4d5-2e40-4a97-aa00-59e1a81199c7.jpg" alt="Memory 3"></div>
+        <div class="photo"><img src="7144ce97-a9ba-4762-b5b1-83239a18b71f.jpg" alt="Memory 4"></div>
+        <div class="photo"><img src="0ba6c859-48f0-443d-b271-f2e2b38abec6.jpg" alt="Memory 5"></div>
+        <div class="photo"><img src="6eb3e6a2-9a2f-445d-9d7f-beba26b23d15.jpg" alt="Memory 6"></div>
+        <div class="photo"><img src="37d7519f-312a-407a-a74d-51cb6f5638b6.jpg" alt="Memory 7"></div>
+        <div class="photo"><img src="be484d11-8ab6-4ffb-8e66-758852ce0f60.jpg" alt="Memory 8"></div>
+        <div class="photo"><img src="df99ffb8-f2e2-4123-ac23-1922f78176ae.jpg" alt="Memory 9"></div>
+        <div class="photo"><img src="f950528c-20bb-4e4b-bd57-884ed6885199.jpg" alt="Memory 10"></div>
+      </div>
+      <footer>Made with ❤️ for you</footer>
+    </div>
+  </section>
+
+  <script>
+    function goToDashboard() {
+      document.getElementById('intro').classList.remove('active');
+      document.getElementById('dashboard').classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+
